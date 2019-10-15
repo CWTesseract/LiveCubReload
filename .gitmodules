@@ -1,0 +1,6 @@
+[submodule "CWTCore"]
+	path = CWTCore
+	url = https://github.com/CWTesseract/CWTCore
+[submodule "wil"]
+	path = wil
+	url = https://github.com/microsoft/wil

@@ -1,0 +1,5 @@
+# Visual Studio cache/options directory
+.vs/
+
+# CMake output/build directory
+out/*

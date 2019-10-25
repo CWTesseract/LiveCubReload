@@ -1,13 +1,14 @@
 cmake_minimum_required (VERSION 3.8)
 project(LiveCubReload)
 
+option(STATIC_LIB "Build efsw as a static library" ON)
+SET(STATIC_LIB ON CACHE BOOL "Build efsw as a static library" FORCE)
 add_subdirectory(efsw)
 
 # Create our library.
 add_library (LiveCubReload SHARED "src/main.cpp")
 
 # Link efsw and CWTCore.
-option(STATIC_LIB "" ON)
 target_link_libraries (LiveCubReload PRIVATE efsw)
 target_link_libraries (LiveCubReload LINK_PUBLIC CWTCore)
 
